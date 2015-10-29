@@ -1,0 +1,339 @@
+@import "valiable";
+
+
+.mod-dialog {
+	width:520px;border-radius:3px;
+	min-height: 350px;background:#fff;font-size:12px;
+	border-radius:4px;
+	.mod-dialog-head {
+		height:$diah-height;
+		line-height: $diah-height;
+		background: $diah-bg;
+		text-align: center;
+	}
+	.mod-dialog-body {
+		padding:20px 14px 0;
+		.form-control{
+			height:24px;line-height:24px;
+			padding:0 6px;border-radius:2px;
+			&.input_reduce_time {
+				width:276px;
+			}
+		}
+		span {
+			display:inline-block;
+			height: 24px;line-height: 24px;
+			&.c_price {
+				line-height: 18px;
+			}
+		}
+	}
+	.mod-dialog-bottom {
+		height:114px;
+		// line-height: 114px;
+		border-top: 1px dashed #eee;
+		.btn-group {
+			width:100%;
+			text-align:center;
+			padding:42px 0;
+			.btn-dia {
+				padding:0;border:0;margin:0;
+				width:157px;height:30px;line-height:28px;text-align:center;background:transparent;
+				border:2px solid $color-primary;color:$color-primary;margin:0 20px;
+				&:hover {
+					background:$color-primary;
+					color:#fff;
+				}
+			}
+		}
+	}
+	i {font-style:normal;}
+}
+
+// search
+.social_manage_search {
+	.btn-primary {
+		position: absolute;
+    height: 36px;
+    box-shadow: none;
+    border: 0;
+    border-radius: 0 4px 4px 0;
+	}
+}
+//social 
+.em-check-box {
+	// padding:30px 0 20px 0px;
+}
+// 员工基本信息
+.em_basic_info {
+	border-bottom:1px dashed #eee;
+	    padding-bottom: 15px;
+	.em_photo {
+		background:#f4f4f4;
+		padding:3px;
+	}
+	.em_info {
+		float:left;
+		margin-left: 27px
+	}
+	.em_name {
+		font-weight:bold;padding:0;margin:0;
+		font-size: 18px;margin-bottom: 30px;padding-top: 6px
+	}
+	.em_age {
+		margin-bottom: 14px;
+	}
+}
+.em-col {
+	margin-bottom: 10px;position:relative;
+	.input_add_time {
+		width:126px;border:1px solid #ccc;
+		height:24px;line-height:24px;border-radius:1px;
+	}
+	.input_social_accout,.input_reserve_accout {
+		width:126px;border:1px solid #ccc;
+		height:24px;line-height:24px;border-radius:1px;
+	}
+}
+.em-label {
+	float:left;
+	display:block;color:#999;font-size:12px;width:64px;
+	.em-label-reserved, .em-label-social{
+		display: inline-block;
+		width:52px;height:24px;line-height:24px;text-align:center;
+		font-size: 14px;
+	}
+	.em-label-social {
+		background:#b3f0e1;
+		color:#1d9d7c;
+	}
+	.em-label-reserved {
+		background:#fae7bd;
+		color:#bb8817;
+	}
+}
+.mod-dialog .mod-dialog-body .em-rs-select {
+	width:94px;margin-right:10px;
+	&.em-rs-select-com {
+		margin-right: 0
+	}
+	span {
+		display:table-cell;height: 22px;padding:0;line-height: 22px;border-right:0;border-radius:4px 0 0 4px;
+	}
+	.form-control {
+		padding:1px;
+		border-radius:0 2px 2px 0;
+		
+	}
+}
+.c_price {
+		color:#ff8a00;font-weight:bold;
+}
+// 总价
+.em-total {
+	// padding:74px 0 74px 24px;
+	// border-bottom:1px dashed #eee;
+	// border-top:1px dashed #eee;
+	// padding-left: 35px;
+	.c_price {
+		color:#ff8a00;font-weight:bold;
+	}
+
+}
+.employee_detail_box {
+	.em-total {
+		border-bottom:1px dashed #eee;
+		border-top:1px dashed #eee;
+		padding:90px 0 90px 0;
+		    margin-left: -35px;
+    padding-left: 35px;
+	}
+}
+
+.switch-btn {
+    position:absolute;
+    width: 14px;
+    height: 14px;
+    margin-top: 5px;
+    left:-24px;
+    z-index: 10;
+}
+.switch-btn .div-checkbox {
+    display: block;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    background: url(../../images/buy-page-sprite.png) -22px -224px no-repeat;
+}
+.has-switch .div-checkbox {
+    background: url(../../images/buy-page-sprite.png) -46px -224px no-repeat;
+}
+
+.em_other_box {
+	// margin-top: 20px
+}
+.em_other_info {
+	// padding-top:14px;
+	// margin-left: 35px
+	padding-top: 14px;
+    padding-bottom: 4px;
+}
+// radio
+.diy_radio {
+	.status-radio {display:none;}
+	.single_radio {
+		display:inline-block;
+		width:60px; height:24px;line-height:22px;cursor:pointer;
+		border:1px solid #ccc;text-align:center;font-size:12px;border-radius:1px;
+		&.selected {
+			line-height:24px;border:0;
+			color:#fff;
+		background:$color-primary;
+		}
+	}
+}
+// hr
+.hr_dashed {
+	width:100%;
+	height:0;padding:0;margin:0;
+	border-top:1px dashed #eee;
+}
+
+// edit
+.common-social-edit {
+	.form-control {
+		display:inline-block;
+	}
+}
+
+.base_lowest {
+    width: 78px;
+    padding-left: 5px;
+    background: url(../../images/base_lowest.png) right bottom no-repeat;
+    background-size: 23px 23px;
+    cursor: pointer;
+    color: #ccc;
+    text-align: left;
+        border: 1px solid #ccc;
+        border-left-width:0;font-size:12px;border-radius:0 4px 4px 0;
+}
+.base_lowest_select {
+    background: url(../../images/base_lowest_select.png) right bottom no-repeat;
+    color: #38b863;
+}
+
+.input-group-addon {
+    padding: 1px;
+    height: 24px;
+    font-size: 12px;
+}
+.mod-dialog .mod-dialog-body  .low_base_input {
+	margin-left: 10px;
+	.form-control {
+		width: 75px;
+		border-radius: 4px 0 0 4px;
+	}
+	span.base_lowest {
+		line-height: 22px;
+	}
+}
+
+.city_container {
+    position: relative;
+}
+.city_panel {
+    position: absolute;
+    z-index: 99;
+     width: 442px;
+    min-height: 150px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+        left: 64px;
+}
+.city_panel .area-sel {
+    width: 80px;
+    margin-right: 5px;
+    float: left;
+        height: 34px;
+    border-radius: 4px;
+}
+.city_panel button.close {
+        margin-right: -14px;
+    margin-top: -14px;
+}
+.cityComp select {
+   
+}
+.city_detail_add,.city_detail_edit {
+    width:360px;
+    border-radius: 2px;
+}
+
+
+// form
+.detial-return {
+	text-align:right;
+	.returnBtn {
+
+	}
+}
+.common-detail-form {
+	margin-top: 24px;
+	width:100%;
+	.form-table {
+		border:1px solid #e2f0f9;
+		.tr-bg {
+			background:#e2f0f9;
+		}
+		.tr-reserve {
+			border-bottom:1px solid #fff;
+		}
+		td {
+			font-size: 12px;
+			vertical-align: middle;text-align:center;
+			&.td-border-w {
+				border-left:1px solid #fff;
+			}
+			&.td-social-total {
+				border-left:1px solid #fff;border-bottom:1px solid #fff;
+				background:#e2f0f9;
+
+			}
+		}
+		>thead>tr>td {
+			    border: 1px solid #fff;
+			background:#dbe8f6;font-weight:bold;
+		}
+		>tbody>tr>td {
+			border:0;
+		}
+	}
+}
+
+//photo
+.em_photo_upload {
+	padding: 24px 0;
+	.form-group {
+		width:78%;margin:0 auto;
+	}
+	.up_info {
+		width:82px;
+		text-align:center;
+	}
+	.tips {
+		width:100%;text-align:center;
+		padding-top: 10px
+	}
+}
+// 减员
+.employee_reduce_box {
+	width:274px;margin:67px auto;
+	.error-message {
+		margin-bottom: 20px;color:#fe8900;
+		font-size: 12px;
+	}
+}
+.employee_reduce_back_box,.employee_add_back_box {
+	height:192px;line-height:192px;text-align:center;
+}  
