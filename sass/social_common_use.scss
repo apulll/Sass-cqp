@@ -1,4 +1,5 @@
 @import "valiable";
+@import "common";
 
 
 .mod-dialog {
@@ -334,6 +335,6 @@
 		font-size: 12px;
 	}
 }
-.employee_reduce_back_box,.employee_add_back_box {
+.employee_reduce_back_box,.employee_add_back_box,.employee_change_back_box {
 	height:192px;line-height:192px;text-align:center;
 }  

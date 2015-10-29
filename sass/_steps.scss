@@ -1,2 +1,47 @@
-//! tab
+//! step  
 
+
+.steps_box{
+    margin:35px auto 0;width:654px;
+    >li{
+        position: relative;float:left;width:190px;
+        .steps_info {
+            width:80px;
+            text-align:center;
+        }
+        .stpes_img {
+            display:block;
+            background:url(#{$image-url}step_cir_false.png) no-repeat center;
+             width:22px;height:22px;
+             margin:0 auto;font-size:12px;color:#fff;
+             text-align: center;line-height: 22px;margin-bottom: 4px;
+        }
+        .steps_text{
+            color:$color-gray-note;
+        }
+        .steps_line {
+
+            width:149px;height:2px;background:#ccc;
+            position: absolute;
+            top: 11px;
+            left: 60px;
+        }
+        &.last {
+            width:80px;
+        }
+        &.status_ok {
+            .stpes_img {
+                background-image:url(#{$image-url}step_cir_ok.png);
+                // color:$color-primary;
+
+            }
+            .steps_text{
+                color:$color-primary;
+            }
+            .steps_line{
+                background:$color-primary;
+            }
+        }
+       
+    }
+}

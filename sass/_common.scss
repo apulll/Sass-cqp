@@ -8,6 +8,13 @@
 .w198 {
 	width:198px;
 }
+.w290{
+	width:290px;
+}
+.block-center {
+	margin-left:auto;
+	margin-right:auto;
+}
 .pt20{padding-top: 20px}
 .pb20{padding-bottom: 20px}
 .pl35 {
@@ -70,4 +77,17 @@ i {
   line-height: 30px;
   border-radius:1px;
 }
+.form-horizontal .form-group {
+	margin:0;
+	margin-bottom:20px;
+}
+.error-msg {
+	width:290px;
+	height:32px;line-height:32px;
+	background-color:$color-tips;
+	color:#fff;    padding: 0 12px;
+	border-radius:3px;
+}
+
+
 

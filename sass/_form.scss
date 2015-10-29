@@ -1,0 +1,118 @@
+@import "compass/css3";
+.form-section .input-text::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.form-section .input-text::-moz-placeholder {
+    color: #fff
+}
+
+.form-section .input-text:-ms-input-placeholder {
+    color: #fff
+}
+
+.form-section .input-text::placeholder {
+    color: #fff;
+}
+
+.form-section .input-text[disabled] {
+    background-color: #f5f5f5
+}
+
+.form-section .input-text[disabled]::-webkit-input-placeholder {
+    color: #f5f5f5
+}
+
+.form-section .input-text[disabled]::-moz-placeholder {
+    color: #f5f5f5
+}
+
+.form-section .input-text[disabled]:-ms-input-placeholder {
+    color: #f5f5f5
+}
+
+.form-section .input-text[disabled]::placeholder {
+    color: #f5f5f5
+}
+.form-section-focus .input-text {
+    border-color: $color-primary;
+}
+
+.form-section-focus .input-text::-webkit-input-placeholder {
+    color: #b0b0b0;
+    -webkit-transition: color 0.2s 0.2s linear;
+    transition: color 0.2s 0.2s linear
+}
+
+.form-section-focus .input-text::-moz-placeholder {
+    color: #b0b0b0;
+    transition: color 0.2s 0.2s linear
+}
+
+.form-section-focus .input-text:-ms-input-placeholder {
+    color: #b0b0b0;
+    transition: color 0.2s 0.2s linear
+}
+
+.form-section-focus .input-text::placeholder {
+    color: #b0b0b0;
+    -webkit-transition: color 0.2s 0.2s linear;
+    transition: color 0.2s 0.2s linear
+}
+
+.form-section-focus .input-label {
+    color: $color-primary
+}
+.form-section-active .input-label {
+    top: -11px;
+    font-size: 12px;
+    background: #fff
+}
+
+.form-section {
+    position: relative;
+    margin: 0 ;
+    padding: 0;
+    border: 0;
+    text-align: left;
+}
+.input-label {
+    position: absolute;
+    left: 10px;
+    top: 6px;
+    z-index: 2;
+    padding: 0 3px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #b0b0b0;
+    background: transparent;
+    cursor: text;
+    @include transition(all,0.2s,linear)
+}
+.input-text {
+    // width: 186px;
+    // height: 30px;
+    // padding: 10px 16px;
+    // border: 1px solid #e0e0e0;
+    // font-size: 14px;
+    // line-height: 30px;
+    height:32px;line-height:32px;
+    background: #fff;
+    border-radius:3px;font-size:12px;
+    @include transition(border-color,0.2s,linear)
+    // -webkit-transition: border-color 0.2s linear;
+    // transition: border-color 0.2s linear;
+}
+.input-submit {
+    padding:0;margin:0;border:0;
+    background:$color-primary;
+    height:32px;line-height:32px;
+    text-align:center;color:#fff;
+    margin-bottom: 10px;
+    @include transition(all,0.5s);
+    &:hover{
+
+        background:darken($color-primary,3%);
+        @include transition(all,0.5s);
+    }
+}
