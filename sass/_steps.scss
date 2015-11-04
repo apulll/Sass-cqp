@@ -3,6 +3,9 @@
 
 .steps_box{
     margin:35px auto 0;width:654px;
+    &.steps03{
+        width:468px;
+    }
     >li{
         position: relative;float:left;width:190px;
         .steps_info {
@@ -40,6 +43,11 @@
             }
             .steps_line{
                 background:$color-primary;
+            }
+            &.status_center{
+                .steps_line{
+                    background:#ccc;
+                }
             }
         }
        

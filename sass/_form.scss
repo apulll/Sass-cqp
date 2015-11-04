@@ -99,9 +99,21 @@
     height:32px;line-height:32px;
     background: #fff;
     border-radius:3px;font-size:12px;
-    @include transition(border-color,0.2s,linear)
+    @include transition(border-color,0.2s,linear);
     // -webkit-transition: border-color 0.2s linear;
     // transition: border-color 0.2s linear;
+    &.error {
+        // border-color:$color-tips;
+    }
+    
+    &.code{
+        width:110px;background-color:$color-primary;color:#fff;
+            line-height: 32px;padding: 0;border: 0;margin: 0;
+            margin-left:6px;
+    }
+    &.disabled,&[disabled]{
+        background-color:#eee;
+    }
 }
 .input-submit {
     padding:0;margin:0;border:0;
