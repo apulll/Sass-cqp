@@ -56,6 +56,12 @@ i {
 	border-radius:2px;    margin: 0 12px;
 
 }
+.btn-green{
+	width:290px;padding:0;border:0;
+	height:32px;line-height:32px;border-radius:2px;
+	background-color:$color-primary;
+	color:#fff;font-size:14px;text-align:center;
+}
 .btn-border {
 	border:2px solid $color-primary;
 	line-height:28px;
@@ -83,6 +89,7 @@ i {
   height: 30px;
   line-height: 30px;
   border-radius:1px;
+  color:#333;
 }
 .form-horizontal .form-group {
 	margin:0;

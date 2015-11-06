@@ -1,0 +1,147 @@
+@import "compass/css3";
+// model pay
+@import "valiable";
+@import "common";
+
+
+@import "steps";
+@import "form";
+
+@import "common_user";
+
+// cash——desk
+// common start
+.w990{
+	width:990px;
+}
+.f18{
+	font-size:18px;
+}
+.input_nest {
+	position:relative;margin-bottom: 20px;
+	.link-foget-password {
+		position:absolute;
+		right:10px;
+		top:8px;
+	}
+}
+// common end
+.cash_wrap{
+	color:#666;
+}
+.cash_desk_content {
+	border:1px solid #eee;
+	padding:24px;margin-top: 30px;
+	margin-bottom: 200px;
+}
+.cash_pay_header {
+	margin-bottom: 30px;
+	padding-left: 20px;
+	background:url(#{$image-url}user/cash_desktop/icon-safe-clock.png) no-repeat left center;
+
+}
+.cash_pay_list {
+	.cash_pay_item {
+		width:100%;
+		border:1px solid #ccc;
+		padding:20px 27px;cursor: pointer;
+		.pay_rest_amount_box {
+			display:none;
+		}
+		&.checked{
+			border:1px solid #9adcb0;
+			.cash_select_box {
+				background-image:url(#{$image-url}user/cash_desktop/checked.png)
+			}
+			.pay_rest_amount_box {
+				display:block;
+			}
+		}
+	}
+	.cash_select_box {
+		background:url(#{$image-url}user/cash_desktop/icon-safe-check.png) no-repeat;
+		height: 26px;
+	    line-height: 26px;
+	    padding-left: 40px;
+	}
+
+}
+.icon-radio-check-box {
+	height:38px;width:172px;display:inline-block;margin-right: 68px;
+	background: no-repeat 35px center;
+	.icon-check{
+		width:26px;height:26px;display:inline-block;margin-top: 9px;
+		background:url(#{$image-url}user/cash_desktop/icon-safe-select.png) no-repeat;
+	}
+	&.checked{
+		.icon-check{
+			background-image:url(#{$image-url}user/cash_desktop/icon-safe-selected.png);
+		}
+	}
+}
+.zhifubao_box{
+		background-image:url(#{$image-url}user/cash_desktop/icon-safe-zhifubao2.png);
+}
+.weixin_box{
+	background-image:url(#{$image-url}user/cash_desktop/icon-safe-weixin2.png)
+}
+.pay_two_box {
+	padding-left: 40px;
+}
+.trade_input_box {
+	display:none;
+}
+.pay_submit_box {
+	width:290px;
+	margin:56px auto;
+}
+.pay_other_box {
+	display:none;
+}
+.bank_tranfor_box {
+	width:340px;margin-left: 40px;
+	.table {
+		border:1px solid #ccc;
+		td{
+			border:1px solid #ccc;
+		}
+	}
+}
+//bank success
+.bank_success {
+	width: 988px;
+    height: 473px;
+    margin: 30px auto;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-top: 2px solid #eee;
+}
+.bank_success_box{
+	width:430px;
+	margin:0 auto;
+	padding-left: 40px;
+	margin-top: 60px;
+	background:url(../../images/user/cash_desktop/checked.png) no-repeat left top;
+	.bank_tranfor_box{
+		margin-left: 0;
+	}
+}
+// from pay succe
+.wx_qrcode {
+	text-align:center;
+}
+.wx_qrode_img {
+	background:url(#{$image-url}user/pay/code_border.png) no-repeat center;
+	width:186px;height:186px;
+	padding:14px;margin-top: 10px;
+}
+.wcode-small {
+	width: 156px;
+    margin: 30px auto 10px;
+	height:27px;line-height:27px;
+}
+.icon-wcode-small {
+	display:inline-block;
+	background:url(#{$image-url}user/pay/icon-safe-dimentionwarn.png) no-repeat center;
+	width:27px;height:27px;float: left;margin-right: 16px;
+}
