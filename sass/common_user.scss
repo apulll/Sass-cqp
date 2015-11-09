@@ -2,6 +2,9 @@
 @import "tabnav";
 @import "valiable";
 @import "common";
+@import "user-icons";
+
+@import "tips";
 
 //model user
 
@@ -35,7 +38,7 @@ a:focus {
 .icon-status{
 	display:inline-block;
 	width:26px;height:26px;
-	
+
 	float: left;
     margin-right: 10px;
 }

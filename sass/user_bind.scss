@@ -23,6 +23,15 @@
 }
 .code_tips {
 	display:none;
+
+	&:before{
+		content:"";
+		width:20px;
+		height:16px;
+		float:left;
+		background-image: url(#{$image-url}user/uicon.png); background-repeat: no-repeat;
+	background-position: 0 -866px;
+	}
 }
 
 

@@ -1,0 +1,45 @@
+//! tips
+%arrow-top{
+	bottom: 100%;
+	left: 10px;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+.input-tip{
+    position: absolute;
+    right:12px;
+    top:8px;right:-286px;
+    color:$color-tips;
+    width:270px;
+    // background:url(#{$image-url}user/
+    .hq_tips {
+    	padding-left: 30px;
+    background-position-x: 9px;
+    cursor: default;
+    }
+    >.tips-content{
+    	position: relative;margin-top: 8px;
+    	border:1px solid $color-tips;
+    	border-radius:2px;
+    	padding:10px 20px 10px 10px;
+    	background:#FFFAF4 ;display:none;
+    	&:before{
+			@extend %arrow-top;
+			border-color: rgba(194, 225, 245, 0);
+			border-bottom-color: #ff8a00;
+			border-width: 7px;
+			margin-left: -1px;
+    	}
+    	&:after{
+    		@extend %arrow-top;
+			border-bottom-color: #fffaf4;
+			border-width: 6px;
+			margin-left: 0px;
+    	}
+    }
+
+}
