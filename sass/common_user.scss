@@ -64,3 +64,29 @@ a:focus {
 		}
 	}
 }
+
+.right_box {
+	border:1px solid #eee;min-height: 518px;
+}
+.mod-right-head {
+	height:36px;
+	line-height:36px;
+	background:#f4f4f4;
+	padding-left: 15px;
+	color:$color-gray-note;font-weight:bold;
+}
+.form-box {
+	margin:70px auto 35px;font-size:12px;color:$color-gray-note;
+}
+.code_tips {
+	display:none;
+
+	&:before{
+		content:"";
+		width:20px;
+		height:16px;
+		float:left;
+		background-image: url(#{$image-url}user/uicon.png); background-repeat: no-repeat;
+	background-position: 0 -866px;
+	}
+}
